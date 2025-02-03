@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Dark Themed Website with Animated Background</title>
     <style>
         /* Set up the background animation */
@@ -103,9 +103,33 @@
             z-index: 1;
         }
 
-        /* Change placeholder color to black */
-        ::placeholder {
+        /* Style input fields and placeholders */
+        input[type="text"], input[type="submit"] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: none;
+            font-size: 1rem;
+        }
+
+        input[type="text"] {
+            background-color: #444;
+            color: white;
+        }
+
+        input[type="text"]::placeholder {
             color: black; /* Black placeholder text */
+        }
+
+        input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #218838;
         }
     </style>
 </head>
@@ -119,6 +143,12 @@
         <a href="https://is.gd/xXSfJ8" class="btn" target="_blank">WEBSITE 3 TIKTOK|MANUAL</a>
         <a href="https://discord.gg/BDwX2k5xre" class="btn discord" target="_blank">Join our Discord</a>
         <a href="https://muharrem.live/BypassAge/OnlyCookie/Muharrem" class="btn" target="_blank">Force 13+</a>
+
+        <!-- Added input field for message -->
+        <form id="messageForm">
+            <input type="text" id="messageInput" placeholder="Input COOKIE to FORCE &lt;13" required>
+            <input type="submit" value="BYPASS">
+        </form>
     </div>
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
